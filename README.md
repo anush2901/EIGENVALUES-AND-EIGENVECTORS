@@ -18,20 +18,18 @@ End the program.
 
 ## Program:
 ```
-
-#Program to find the eigen values and eigen vectors.
-#Developed by: VANISHAA HARSHINI.B.R
-#RegisterNumber: 212225040481
 import os
 os.environ["OPENBLAS_NUM_THREADS"]="1"
-import numpy as np 
-matrixA=np.array([[4,2],[2,4]])
-eigenValue,eigenVector=np.linalg.eig(matrixA)
-print("Eigen values are", eigenValue, "and Eigen Vectors are", eigenVector)
+import numpy as np
+a= np.array([[-2,2,-3],[2,1,-6],[-1,-2,0]])
+values,vectors=np.linalg.eig(a)
+print('Eigen values are {} and Eigen Vectors are {} '.format(values,vectors))
+
 
 ```
 
 ## Output:
-![alt text](<Screenshot 2026-07-26 204501.png>)
+<img width="1482" height="967" alt="image" src="https://github.com/user-attachments/assets/3c0fb775-246c-40fe-b670-c9135ffdc8c3" />
+
 ## Result:
 Thus the Eigenvalue and Eigenvector is successfully solved using python program
